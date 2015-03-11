@@ -1,3 +1,33 @@
+## Optimizations done ##
+
+To view project specifications... scroll down :D
+
+Project folder contain non optimized files (understand withou grunt build)
+Dist folder contain grunt builded files
+
+(to try grunt process, 'npm install' and 'grunt build')
+
+## Optimization for index.html
+
+concatenate files
+minify html, css and js files
+compress images
+
+some stuff have been done to clarify project files and some changes have been made in css
+
+## Optimization for pizza.html
+
+pizza got same grunt build as index.html
+
+Loops have been corrected to avoid too many unnecessary calculations.
+
+Numbers of moving pizzas have been reduced by calculating the strictly necessary amount based on width and height of the page.
+
+Some tips given in Office hour have been applied (getElementsByClassName and css hack)
+
+
+
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
@@ -32,7 +62,7 @@ Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
 ####Part 2: Optimize Frames per Second in pizza.html
 
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
+To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js.
 
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
