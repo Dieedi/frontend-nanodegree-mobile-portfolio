@@ -133,7 +133,8 @@ module.exports = function(grunt) {
 
             jpg: {
                 options: {
-                    progressive: true
+                    progressive: true,
+                    optimizationLevel: 7
                 },
 
                 files: [
@@ -150,7 +151,8 @@ module.exports = function(grunt) {
 
             jpgpiz: {
                  options: {
-                    progressive: true
+                    progressive: true,
+                    optimizationLevel: 7
                 },
 
                 files: [
@@ -163,6 +165,17 @@ module.exports = function(grunt) {
                         dest: 'dist/views/images/',
                         ext: '.jpg'
                     }]
+            }
+        },
+
+        image_resize: {
+            no_overwrite: {
+                options: {
+                    width: 100,
+                },
+                files: {
+                    'project/views/images/pizzeriamini.jpg': 'project/views/images/pizzeria.jpg'
+                }
             }
         },
 
@@ -217,6 +230,7 @@ module.exports = function(grunt) {
         },
     });
 
+    grunt.loadNpmTasks('grunt-image-resize');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-processhtml');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
